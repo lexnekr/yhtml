@@ -1,0 +1,201 @@
+@font-face {
+    font-family: OldLondon;
+    src: 
+        url('fonts/OldLondon.woff') format('woff'),  /* FF 3.6, Chrome 5, IE9 */
+        url('fonts/OldLondon.ttf') format('truetype'), /* Opera, Safari */
+        url('fonts/OldLondon.svg#font') format('svg'); /* iOS */
+}
+@font-face {
+    font-family: SpecifyPERSONAL;
+    src: 
+        url('fonts/SpecifyPERSONAL-ConMedium.woff') format('woff'),  /* FF 3.6, Chrome 5, IE9 */
+        url('fonts/SpecifyPERSONAL-ConMedium.ttf') format('truetype'), /* Opera, Safari */
+        url('fonts/SpecifyPERSONAL-ConMedium.svg#font') format('svg'); /* iOS */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: SpecifyPERSONAL;
+    src: 
+        url('fonts/SpecifyPERSONAL-ConBold.woff') format('woff'),  /* FF 3.6, Chrome 5, IE9 */
+        url('fonts/SpecifyPERSONAL-ConBold.ttf') format('truetype'), /* Opera, Safari */
+        url('fonts/SpecifyPERSONAL-ConBold.svg#font') format('svg'); /* iOS */
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: BlackLarch;
+    src: 
+        url('fonts/BlackLarch.woff') format('woff'),  /* FF 3.6, Chrome 5, IE9 */
+        url('fonts/BlackLarch.ttf') format('truetype'), /* Opera, Safari */
+        url('fonts/BlackLarch.svg#font') format('svg'); /* iOS */
+}
+
+body {
+    width: 1200px;
+}
+aside {
+    width: 200px;
+    float: left;
+}
+header .left {
+    border: 1px solid black;
+    margin: 25px;
+    vertical-align: middle;
+    padding: 15px;
+    font-size: .8rem;
+}
+header .MagTitle {
+    font-family: OldLondon;
+    font-size: 6rem;
+    width: 800px;
+    float: left;
+}
+header .right {
+    text-align: justify;
+    font-size: .8rem;
+}
+.right p {
+    /*text-indent: 20px;*/
+    margin-top: 0em; /* Отступ сверху */
+}
+p.right_title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 1em; /* Отступ сверху */
+    margin-bottom: 0em; /* Отступ снизу */
+}
+
+.RDS {
+    /*width: 100%;*/
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    clear: both;
+}
+.RDS .small_text {
+    font-size: 0.7em;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.RDS .right {
+    float:right;
+    /*margin-top: 2px;*/
+    vertical-align: middle;
+}
+
+main {
+    margin-top: 10px;
+    box-sizing: content-box;
+    font-size: 0.8rem;
+}
+
+main>div{
+    float: left;
+}
+
+main .left {
+    border-right: 1px solid black;
+    width: 199px;
+    padding: 0 10px 0 10px;
+    box-sizing: border-box;
+}
+main>.center {
+    width: 800px;
+    padding: 0 10px 0 10px;
+    box-sizing: border-box;
+}
+main .right {
+    border-left: 1px solid black;
+    width: 199px;
+    padding: 0 10px 0 10px;
+    box-sizing: border-box;
+}
+
+main h2 {
+    font-size: 2rem;
+}
+
+main h2.BlackLarch {
+    font-family: BlackLarch;
+    font-weight: normal;
+    font-size: 2rem;
+    letter-spacing: 2.5px;
+}
+
+main h2.SpecifyPERSONAL {
+    font-family: SpecifyPERSONAL;
+    font-size: 1.7rem;
+}
+
+main h4 {
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+main p {
+    text-align: justify;
+    text-indent: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+main p.noindent {
+    text-indent: 0;
+}
+
+main a {
+    text-decoration: none;
+    font-style: italic;
+    color: #000;
+}
+main .text_center {
+    text-align: center;
+}
+
+figure {
+    margin: 0;
+}
+figure.rightAlign {
+  float: right;
+  margin: 10px 0 1em 1em;
+}
+
+figcaption .authorName {
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.rightAlign figcaption {
+    font-size: 0.7rem;
+}
+
+hr {
+    width: 30%;
+}
+hr.fat {
+    width: 95%;
+    border-bottom: 5px solid grey;
+}
+
+main article {
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+    margin-top: 10px;
+}
+
+main article:first-of-type {
+    border-right: 1px solid #000;
+    padding-right: 10px;
+}
+main article:nth-of-type(2){
+    padding-left: 10px;
+}
+
+.coltext2 {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+}
